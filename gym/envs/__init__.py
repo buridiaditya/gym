@@ -1,5 +1,20 @@
 from gym.envs.registration import registry, register, make, spec
 
+register(
+    id='gym-torcs-v0',
+    entry_point='gym.envs.madras:TorcsEnv',
+    max_episode_steps=10000,
+    reward_threshold=25.0,
+)
+
+register(
+    id='gym-madras-v0',
+    entry_point='gym.envs.madras:MadrasEnv',
+    max_episode_steps=10000,
+    reward_threshold=25.0,
+)
+
+
 # Algorithmic
 # ----------------------------------------
 
